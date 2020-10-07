@@ -4,12 +4,16 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: var(--color-secondary);
+}
+p{
+    word-wrap: break-word;
 }
 
 :root{
-    --color-primary: #000000;
-    --color-secondary: #ffffff;
-    --color-border: #ffffff34;
+    --color-primary: #162521;
+    --color-secondary: #D1D5DE;
+    --color-border: #558B6E;
     --font-staat: 'Staatliches', cursive;
     --font-os:  'Oswald', sans-serif;
     --font-ram: 'Rambla', sans-serif;
@@ -129,3 +133,11 @@ body{
 }
 
 /* #site-main */
+section{
+    height:900px ;
+}
+
+div p {
+    width: 50%;
+    align-content: center;
+}
