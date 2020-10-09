@@ -9,10 +9,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
+  
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
     
-   
+    <script>
+        const pressed = [];
+        const secretCode = 'fumes23';
+        
+        window.addEventListener('keyup', (e) => {
+          console.log(e.key);
+          pressed.push(e.key);
+          pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+          if (pressed.join('').includes(secretCode)) {
+            console.log('DING DING!');
+            cornify_add();
+          }
+          console.log(pressed);
+        });
+        </script>
     <header id="header">
         <div class="row m-0">
             <div class="col-3 bgcolor-primary">
@@ -63,7 +79,7 @@
             <div class="col-md-9 offset-md-3 px-0">
 
          
-                
+                  
                     <div class="">
                         <div class="author text-center">
                             <h1 class="text-black font-staat font-size-40 text-uppercase py-3">Skills</h1>
